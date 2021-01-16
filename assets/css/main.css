@@ -2,7 +2,7 @@
     --text-light: #CBCBCB;
     --text-lighter: #E0F5E2;
     --text-accent: #5CE09A;
-    --link-light: rgba(92, 224, 154, 0.56);
+    --link-light: rgb(75, 255, 159);
     --main-background: #2e312e;
     --second-background: #424542;
 }
@@ -22,6 +22,7 @@ body {
     background: var(--main-background);
     color: var(--text-lighter);
     font-family: 'Poppins', sans-serif;
+    font-weight: 200;
 }
 
 main {
@@ -86,14 +87,20 @@ h4 {
 
 p {
     color: var(--text-lighter);
+    font-weight: 200;
     padding-bottom: 10px;
 }
 
 a {
     color: var(--link-light);
     text-decoration: none;
-    opacity: .43;
+    opacity: .7;
+    font-weight: 300;
     transition: all ease .2s;
+    -webkit-transition: all ease .2s;
+    -moz-transition: all ease .2s;
+    -ms-transition: all ease .2s;
+    -o-transition: all ease .2s;
 }
 
 a:hover {
@@ -192,9 +199,10 @@ ul {
     .right {
         display: block;
         text-align: center;
+        margin:0;
     }
     .intro {
-        padding-top: 28px;
+        padding-top: 108px;
     }
     .projects {
         display: block;
@@ -202,6 +210,12 @@ ul {
     .projects-item {
         display: block;
         margin: 0 auto;
+        width: 90%;
+        max-width: 540px;
+        height: auto;
+    }
+    p {
+        margin-bottom: 20px;
     }
     .projects-title {
         display: block;
@@ -222,8 +236,10 @@ ul {
         -ms-transform: unset;
         -o-transform: unset;
     }
-
     .inactive {
         opacity: 1;
+    }
+    .sm {
+        position: fixed;
     }
 }
