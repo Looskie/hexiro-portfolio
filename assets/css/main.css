@@ -11,6 +11,11 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    transition: ease all 0.5s;
+    -webkit-transition: ease all 0.5s;
+    -moz-transition: ease all 0.5s;
+    -ms-transition: ease all 0.5s;
+    -o-transition: ease all 0.5s;
 }
 
 body {
@@ -167,8 +172,11 @@ ul {
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-height: 780px), (max-width: 1676px) {
+    p {
+        margin-bottom: 20px;
+    }
     .projects-item {
-        height: 130px;
+        height: 180px;
     }
 }
