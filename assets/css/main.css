@@ -44,7 +44,7 @@ main {
     margin-right: 20px;
 }
 
-h1, h2, h3, h4, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
@@ -83,6 +83,13 @@ h4 {
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
+}
+
+h5 {
+    text-align: center;
+    color: var(--text-lighter);
+    font-size: 1em;
+    margin-bottom: 30px;
 }
 
 p {
