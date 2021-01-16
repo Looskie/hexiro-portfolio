@@ -29,7 +29,11 @@ main {
 }
 
 .right {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    margin: 20px 20px 20px 0;
     margin-right: 20px;
 }
 
@@ -61,16 +65,17 @@ h3 {
     font-size: 1.5em;
     text-transform: uppercase;
     color: var(--text-accent);
+    padding-top: 10px;
 }
 
 h4 {
     color: var(--text-lighter);
+    font-size: 2em;
+    transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    font-size: 2em;
 }
 
 p {
@@ -98,10 +103,21 @@ ul {
     list-style: none;
 }
 
+.intro {
+    min-height: 115px;
+    position: relative;
+    top: 35%;
+    transform: translateY(-35%);
+    -webkit-transform: translateY(-35%);
+    -moz-transform: translateY(-35%);
+    -ms-transform: translateY(-35%);
+    -o-transform: translateY(-35%);
+}
+
 .sm {
     position: absolute;
-    bottom:0;
     margin: 30px;
+    bottom:0;
 }
 
 .sm-item {
@@ -112,20 +128,32 @@ ul {
     color: var(--link-light)
 }
 
-
-.projects-item {
-    max-width: 650px;
-    margin: 25px auto;
-    background: var(--second-background);
-    padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
+.active {
+    opacity: 1;
 }
 
-.intro {
+.inactive {
+    opacity: .5;
+}
+
+.projects {
+    display:table-row;
+}
+
+.projects-item {
+    position: relative;
+    display:table-cell;
+    max-width: 630px;
+    background: var(--second-background);
+    padding: 4px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
+    height: 230px;
+}
+
+.projects-link {
     position: absolute;
-    display: block;
-    top: 35%;
+    bottom:10px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -136,5 +164,11 @@ ul {
         --link-light: rgba(64, 64, 64, 0.66);
         --main-background: #CFCFCF;
         --second-background: #DEDEDE;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .projects-item {
+        height: 130px;
     }
 }
