@@ -5,6 +5,23 @@
     --link-light: rgb(75, 255, 159);
     --main-background: #2e312e;
     --second-background: #424542;
+    --scrollbar-color: #606160;
+}
+::-webkit-scrollbar {
+    width: .5em;
+}
+ 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: var(--scrollbar-color);
 }
 
 *, *::before, *::after {
@@ -89,7 +106,7 @@ h5 {
     text-align: center;
     color: var(--text-lighter);
     font-size: 1em;
-    margin-bottom: 42px;
+    padding-bottom: 29px;
 }
 
 p {
@@ -167,7 +184,7 @@ svg {
 .projects-item {
     position: relative;
     display:table-cell;
-    width: 530px;
+    max-width: 630px;
     background: var(--second-background);
     padding: 4px 20px;
     border-radius: 10px;
@@ -182,12 +199,12 @@ svg {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --text-light: #404040;
+        --text-light: #333333;
         --text-lighter: #2f2f2f;
         --text-accent: #3ABD78;
         --link-light: rgba(64, 64, 64, 0.66);
-        --main-background: #CFCFCF;
-        --second-background: #DEDEDE;
+        --main-background: #ebebeb;
+        --second-background: #e4e4e4;
     }
 }
 
