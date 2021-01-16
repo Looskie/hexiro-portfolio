@@ -89,7 +89,7 @@ h5 {
     text-align: center;
     color: var(--text-lighter);
     font-size: 1em;
-    margin-bottom: 30px;
+    margin-bottom: 42px;
 }
 
 p {
@@ -145,7 +145,11 @@ ul {
     width: 30px;
     height: 30px;
     display: inline-block;
-    color: var(--link-light)
+    color: var(--link-light);
+}
+
+svg {
+    fill: var(--link-light);
 }
 
 .active {
