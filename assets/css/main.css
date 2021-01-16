@@ -1,0 +1,140 @@
+:root {
+    --text-light: #CBCBCB;
+    --text-lighter: #E0F5E2;
+    --text-accent: #5CE09A;
+    --link-light: rgba(92, 224, 154, 0.56);
+    --main-background: #2e312e;
+    --second-background: #424542;
+}
+
+*, *::before, *::after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--main-background);
+    color: var(--text-lighter);
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    font-weight: 200;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.right {
+    position: relative;
+    margin-right: 20px;
+}
+
+h1, h2, h3, h4, h6 {
+    font-weight: 300;
+}
+
+h6 {
+    margin: 30px;
+    color: var(--text-light);
+    font-size: 2em;
+}
+
+h1 {
+    margin: 30px;
+    margin-bottom: 0;
+    color: var(--text-lighter);
+    font-size: 2.8em;
+}
+
+h2 {
+    margin: 30px;
+    margin-top: 0;
+    color: var(--text-lighter);
+    font-size: 2.0em;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: var(--text-accent);
+}
+
+h4 {
+    color: var(--text-lighter);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-size: 2em;
+}
+
+p {
+    color: var(--text-lighter);
+    padding-bottom: 10px;
+}
+
+a {
+    color: var(--link-light);
+    text-decoration: none;
+    opacity: .43;
+    transition: all ease .2s;
+}
+
+a:hover {
+    opacity: .9;
+}
+
+span {
+    font-weight: 400;
+    color: var(--text-accent);
+}
+
+ul {
+    list-style: none;
+}
+
+.sm {
+    position: absolute;
+    bottom:0;
+    margin: 30px;
+}
+
+.sm-item {
+    margin-right: 11px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    color: var(--link-light)
+}
+
+
+.projects-item {
+    max-width: 650px;
+    margin: 25px auto;
+    background: var(--second-background);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
+}
+
+.intro {
+    position: absolute;
+    display: block;
+    top: 35%;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --text-light: #404040;
+        --text-lighter: #2f2f2f;
+        --text-accent: #3ABD78;
+        --link-light: rgba(64, 64, 64, 0.66);
+        --main-background: #CFCFCF;
+        --second-background: #DEDEDE;
+    }
+}
