@@ -29,6 +29,7 @@ main {
     font-weight: 200;
 }
 
+
 .left, .right {
     flex: 1;
 }
@@ -53,7 +54,7 @@ h6 {
 }
 
 h1 {
-    margin: 30px;
+    margin-left: 30px;
     margin-bottom: 0;
     color: var(--text-lighter);
     font-size: 2.8em;
@@ -148,7 +149,7 @@ ul {
 .projects-item {
     position: relative;
     display:table-cell;
-    max-width: 630px;
+    width: 530px;
     background: var(--second-background);
     padding: 4px 20px;
     border-radius: 10px;
@@ -178,5 +179,51 @@ ul {
     }
     .projects-item {
         height: 180px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    main {
+        display: unset;
+    }
+    .left {
+        text-align: center;
+    }
+    .right {
+        display: block;
+        text-align: center;
+    }
+    .intro {
+        padding-top: 28px;
+    }
+    .projects {
+        display: block;
+    }
+    .projects-item {
+        display: block;
+        margin: 0 auto;
+    }
+    .projects-title {
+        display: block;
+        margin-bottom:25px;
+    }
+    .projects-link {
+        position: absolute;
+        right:15px;
+        bottom:10px;
+    }
+    h4 {
+        position: relative;
+        color: var(--text-lighter);
+        font-size: 2em;
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -ms-transform: unset;
+        -o-transform: unset;
+    }
+
+    .inactive {
+        opacity: 1;
     }
 }
