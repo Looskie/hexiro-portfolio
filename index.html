@@ -14,6 +14,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <!-- Javascript -->
 </head>
 
@@ -65,8 +66,26 @@
             </div>
             <br>
             <!-- Projects list -->
-            <ul class="projects">
-                <li class="projects-item inactive" id="0" onclick="changeProjectFocus(0)">
+            <div class="projects">
+                <div class="projects-item">
+                    <div class="projects-container">
+                        <h3>lorem</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, totam?Lorem, ipsum dolor
+                            sit amet consectetur adipisicing elit. Iure laboriosam delectus ex quisquam voluptatum,
+                            consequatur minima quibusdam doloremque laudantium soluta.</p>
+                        <a href="#" target="_blank" class="projects-link">View on Github</a>
+                    </div>
+                </div>
+                <div class="projects-item">
+                    <div class="projects-container">
+                        <h3>lorem</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi debitis quos perspiciatis
+                            soluta, modi aspernatur in obcaecati quae. Neque aperiam eos impedit nesciunt exercitationem
+                            nulla magni iste at.</p>
+                        <a href="#" target="_blank" class="projects-link">View on Github</a>
+                    </div>
+                </div>
+                <div class="projects-item">
                     <div class="projects-container">
                         <h3>discontinue</h3>
                         <p>Discontinue allows you to send discord messages across multiple different accounts while
@@ -74,32 +93,47 @@
                             blocking properties, all packed in a simple python library.</p>
                         <a href="#" target="_blank" class="projects-link">View on Github</a>
                     </div>
-                </li>
-                <br>
-                <li class="projects-item active" id="1" onclick="changeProjectFocus(1)">
+                </div>
+                <div class="projects-item">
                     <div class="projects-container">
                         <h3>herokron</h3>
                         <p>Herokron is a mainly command line app used to make updating Heroku apps easy between
                             accounts.</p>
                         <a href="#" target="_blank" class="projects-link">View on Github</a>
                     </div>
-                </li>
-                <br>
-                <li class="projects-item inactive" id="2" onclick="changeProjectFocus(2)">
+                </div>
+                <div class="projects-item">
                     <div class="projects-container">
                         <h3>Lorem</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio a ut enim aperiam perspiciatis
                             ratione.</p>
                         <a href="#" target="_blank" class="projects-link">View on Github</a>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </main>
     <!-- Watermark :) -->
     <h5>Website made by <a href="https://www.looskie.com" target="_blank">DEVLOOSKIE</a></h5>
     <!-- Javascript -->
     <script src="assets/js/main.js"></script>
+    <script>
+        let slider = tns({
+            container: '.projects',
+            items: 3,
+            axis: 'vertical',
+            swipeAngle: false,
+            mouseDrag: true,
+            speed: 400,
+            nav: false,
+            disable: true,
+            responsive: {
+                1251: {
+                    disable: false
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
