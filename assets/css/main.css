@@ -159,7 +159,6 @@ svg { fill: var(--link-light) }
 .inactive { opacity: .5 }
 
 .projects { display:table-row }
-
 .tns-ovh { height: 735px; }
 
 .projects-item {
