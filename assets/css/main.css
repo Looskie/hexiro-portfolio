@@ -192,6 +192,7 @@ svg { fill: var(--link-light) }
     p {
         margin-bottom: 20px;
         cursor: text;
+        user-select: initial;
     }
     .intro { padding-top: 108px }
     .projects { display: block }
