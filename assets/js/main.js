@@ -1,4 +1,4 @@
-const changeProjectFocus = (getProject) => {
+const changeProjectFocus = getProject => {
   const getCurrentProjectFocus = document.querySelector('.active');
   const getProjectElement = document.getElementById(getProject);
 
