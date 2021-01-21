@@ -200,6 +200,9 @@ svg { fill: var(--link-light) }
     .inactive { opacity: 1 }
     .sm { position: fixed }
     .left { text-align: center }
+    .tns-ovh { 
+        height: auto;
+    }
     
     .right {
         display: block;
