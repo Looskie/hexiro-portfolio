@@ -220,6 +220,7 @@ svg { fill: var(--link-light) }
         width: 90%;
         max-width: 540px;
         height: auto;
+        cursor: initial;
     }
 
     .projects-title {
