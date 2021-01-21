@@ -160,9 +160,7 @@ svg { fill: var(--link-light) }
 
 .projects { display:table-row }
 
-.tns-ovh {
-    height: 735px;
-}
+.tns-ovh { height: 735px; }
 
 .projects-item {
     position: relative;
