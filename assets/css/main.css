@@ -189,11 +189,6 @@ svg { fill: var(--link-light) }
 
 @media only screen and (max-width: 1250px) {
     main { display: unset }
-    p {
-        margin-bottom: 20px;
-        cursor: text;
-        user-select: initial;
-    }
     .intro { padding-top: 108px }
     .projects { display: block }
     .inactive { opacity: 1 }
@@ -205,6 +200,12 @@ svg { fill: var(--link-light) }
         display: block;
         text-align: center;
         margin:0;
+    }
+
+    p {
+        margin-bottom: 20px;
+        cursor: text;
+        user-select: initial;
     }
 
     h4 {
